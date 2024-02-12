@@ -7,7 +7,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      children: [
+        {
+          path: 'LocationSearch',
+          component: () => import('../components/LocationSearch.vue') 
+        },
+        {
+          path: 'CenterAreaPage',
+          component: () => import('../components/CenterAreaPage.vue') 
+        },
+      ]
     },
     {
       path: '/LogInPage',
@@ -22,16 +32,11 @@ const router = createRouter({
       name: 'PersonalPage',//自訂
       component: () => import('../views/PersonalPage.vue')
     },
-    {
-      path: '/LocationSearch',
-      name: 'LocationSearch',//自訂
-      component: () => import('../views/LocationSearch.vue'),
-    },
-    {
-      path: '/CenterAreaPage',
-      name: 'CenterAreaPage',//自訂
-      component: () => import('../components/CenterAreaPage.vue'),
-    },
+    // {
+    //   path: '/LocationSearch',
+    //   name: 'LocationSearch',//自訂
+    //   component: () => import('../views/LocationSearch.vue'),
+    // },
     {
       path: '/PersonalPage',
       name: 'PersonalPage',//自訂

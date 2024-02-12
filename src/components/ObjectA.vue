@@ -7,7 +7,7 @@
         <div class="ObjectA">
                 <div class="ObjectABox"></div>
                 <div class="ObjectAText">
-                    <button type="button" @click="GoObj3()">都心区　C物件</button>
+                    <button type="button" @click="GoObj3()">都心区　A物件</button>
                     <hr>
                     <div></div>
                 </div>
@@ -24,7 +24,7 @@
     width: 100%;
     background-color: #BEC0CD;
     .MainArea{
-        height: 100%;
+        height: 85vh;
         width: 70%;
         margin: 0 15%;
         padding-top: 2%;

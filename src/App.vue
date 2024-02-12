@@ -23,7 +23,7 @@ import Header from './components/Header.vue'
       height: 15%;
     }
     .Content{
-      height: 85%;
+      height: auto;
     }
 }
 </style>

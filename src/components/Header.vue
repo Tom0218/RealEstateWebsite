@@ -1,18 +1,16 @@
 <script>
-    import { RouterLink} from 'vue-router';
+    import { RouterLink,RouterView} from 'vue-router';
 
     export default{
         components:{
-        RouterLink
+        RouterLink,
+        RouterView
     }
 }
 </script>
 
 <template>
     <div class="body">
-        <!-- <div class="headerpage">
-            <RouterLink to="/" class="Home Btn">Home</RouterLink>;
-        </div> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <div class="header">
             <div class="square"></div>
@@ -36,6 +34,8 @@
             </div>
         </div>
     </div>
+    <!-- <RouterLink to="//Text">Test</RouterLink> -->
+                    
 </template>
 
 <style lang="scss" scoped>

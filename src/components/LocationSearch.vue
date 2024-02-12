@@ -1,6 +1,5 @@
 <script>
 import { RouterLink,RouterView} from 'vue-router';
-import CenterAreaPage from '../components/CenterAreaPage.vue';
 export default{
     data(){
         return{
@@ -13,11 +12,10 @@ export default{
     components:{
         RouterLink,
         RouterView,
-        CenterAreaPage
     },
     methods:{
         GoCenterArea(){
-           this.page = 2;
+            this.page = 2;
         }
     }
 }
@@ -27,7 +25,7 @@ export default{
 <div class="body">
     <div class = MainArea v-if="page===1">
         <div class="CeneterArea">
-            <button type="button" @click="GoCenterArea()">都心区</button>
+            <RouterLink to="LocationSearch/CenterAreaPage">都心区</RouterLink>
         </div>
         <hr>
         <div class="CenterBox">
@@ -56,7 +54,8 @@ export default{
         
     </div>
     <div v-if="page === 2">
-    <CenterAreaPage/>
+    <RouterView/>
+
     </div>
 </div>
 </template>
@@ -92,7 +91,7 @@ hr{
     margin-bottom: 15px;
 }
 .body{
-    height: 100%;
+    height: 85vh;
     width: 100%;
     background-color: #BEC0CD;
     .MainArea{

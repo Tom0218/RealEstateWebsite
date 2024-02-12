@@ -78,8 +78,8 @@ hr{
     height: 1px;
 }
 .body{
+    height: 85vh;
     width:100%;
-    height:100%;
     background-color: #BEC0CD;
 }
 .MainArea{
